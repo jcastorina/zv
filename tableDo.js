@@ -6,9 +6,7 @@ function table (h,w){
         for(var j = 0; j < h; j++){
             row[j] = {'_':'_'};
             k += 1;
-
         }
-       //col[i] = row.splice(0,h);
        col[i] = row.splice(0)
     }
     return col;
