@@ -41,9 +41,10 @@ let game = new Object({
     slider(attr){
         let MAX = 60, MIN = 0, value = 30, key;
         console.clear();  
-      console.log('Set '+chalk.yellowBright(attr)+'\n\n' + (new Array(20)).join(' ') +
-        '[A] <- -> [D]  FIX: [SPACE]\n');
+
+        console.log('Set '+chalk.yellowBright(attr)+'\n\n' + (new Array(20)).join(' ') + '[A] <- -> [D]  FIX: [SPACE]\n');
       while (true) {
+
         console.log(chalk.blueBright('\x1B[1A\x1B[K|' +
           (new Array(value + 1)).join('-') + 'O' +
           (new Array(MAX - value + 1)).join('-') + '| '+chalk.whiteBright(value)));
